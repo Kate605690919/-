@@ -1,0 +1,118 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    min-width: 480px;
+}
+body{
+    padding-bottom:50px;
+    background: url("../img/images/bg4.jpg") no-repeat;
+    background-size: cover;
+}
+.container,.row{
+    height: 100%;
+}
+.img-responsive{
+    padding-top: 120px;
+}
+.login{
+    max-width: 750px;
+    height: 500px;
+    margin-top:50px ;
+    text-align: center;
+}
+.logic-header{
+    padding: 5px 70px;
+    padding-top: 40px;
+}
+.logic-header2{
+    padding: 5px 70px;
+    padding-top: 40px;
+    display: none;
+}
+.logic-content{
+    padding: 0px 90px ;
+}
+.input-group-addon{
+  background: #b9cdc6!important;
+}
+.form-control{
+    height: 50px;
+    background-color:#f0f7f2;
+}
+.input-group{
+    margin: 20px 0 ;
+}
+.input-group-addon{
+    padding-bottom: 5px ;
+}
+.Validate{
+    width: 100%;
+}
+.ValidateCode-box{
+    height: 40px;
+}
+.ValidateCode{
+    height: 40px;
+    border: 3px white solid;
+    line-height: 40px;
+}
+.btn{
+    height: 40px;
+    background-color:#f0f7f2;
+    width: 100%;
+}
+.form-control,.btn{
+    border-color: #c9d9cf;
+    color: #69a0a9;
+    font-size: 18px;
+}
+.form-control:focus,.btn:focus{
+border-color:#bccdc5 !important;
+}
+@media screen and (max-width: 991px) {
+    .img-responsive{
+        display: none;
+    }
+    .logic-header2{
+        display: block;
+    }
+    .logic-header{
+        display: none;
+    }
+    .col-md-9{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1400px ) {
+    .login {
+        margin-top: 160px;
+        margin-left: 40px;
+    }
+
+    .img-responsive {
+        margin-top: 140px;
+        position: relative;
+        left: -50px;
+    }
+}
+/**********************************88*/
+.navbar>.container{
+    line-height: 50px;
+}
+.navbar{
+    background-color: rgba(248,248,248,0.5);
+}
+li{
+    list-style-type: none;
+}
+a,a:visited,a:focus,a:link,a:hover{
+    text-decoration: none;
+    color: #0D3349;
+}
+a:hover{
+    color: #288e9e;
+}
+.help-block{
+    text-align: left!important;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>办公系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/logic.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css">
+    <script src="js/tests/vendor/jquery.min.js"></script>
+    <script src="js/language/zh_CN.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Login.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-lg-4 ">
+            <img class="img-responsive" src="img/images/auto.png" alt="auto">
+        </div>
+        <div class="col-md-9 col-lg-8">
+            <div class="login">
+                <div style="width: 100%;height: 100%;z-index:-1;position: absolute;">
+                    <img src="img/images/显示器4.png" alt="screen" height="500px" width="100%">
+                </div>
+                <div class="logic-header" style="width: 100%;">
+                    <h1>Login In</h1>
+                </div>
+                <div class="logic-header2" style="width:100%;">
+                    <h1>自动化办公系统</h1>
+                </div>
+                <div class="logic-content">
+                    <form role="form" id="form-login" method="post">
+                        <!--用户名输入行 -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label for="usename"><span class="glyphicon glyphicon-user"></span></label>
+                                </div>
+                                <input class="form-control" id="usename" type="text" name="userName" placeholder="请输入用户名"/>
+                            </div>
+                        </div>
+                        <!--密码输入行-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <label for="password"><span class="glyphicon glyphicon-lock"></span></label>
+                                </div>
+                                <input class="form-control" id="password" name="password" type="password"
+                                       placeholder="请输入密码" data-minlength="6" data-error="密码不少于6位" required>
+                            </div>
+                        </div>
+                        <!--验证码-->
+                        <div class="form-group">
+                            <div class="input-group Validate">
+                                <div class="row">
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <input type="text" class="form-control ValidateCode-box" name="ValidateCode"
+                                       placeholder="请输入验证码">
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <div class="ValidateCode text-center">验证码here</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--登录按钮-->
+                        <button type="submit" class="btn btn-default input-group">登&nbsp;录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container text-center">
+        <a class="modal-button" data-toggle="modal" href="#about">关于</a>&nbsp;&nbsp;
+        <a class="modal-button" data-toggle="modal" href="#contact-us">联系我们</a>&nbsp; ©2015~2016&nbsp;保留所有版权
+    </div>
+</nav>
+<!-- Modal about -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">关于我们</h4>
+            </div>
+            <div class="modal-body">
+                <h4>办公自动化系统，提升你的工作效率</h4>
+                本系统由XXX团队与2016年开发完成，旨在为办公人员提供有效的解决方案
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel2">联系我们</h4>
+            </div>
+            <div class="modal-body">
+                <h4>欢迎联系我们，提出意见或者获得帮助</h4>
+                <ul>
+                    <li>联系电话：xxx-xxxxxxxx</li>
+                    <li>电子邮件：12345@qq.com</li>
+                    <li>官方微博：xxxx工作室</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
