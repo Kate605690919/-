@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PictureSwitch</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            background-image: url("img/bw-bg.png");
+            background-repeat:  no-repeat;
+            background-size: cover;
+        }
+        .box{
+            position: relative;
+            margin: 0 auto;
+            width: 900px;
+            min-width: 900px;
+        }
+        .img-box{
+            float: left;
+        }
+        .btn-box{
+            float: left;
+        }
+        button{
+            width: 240px;
+            height: 49px;
+            border: none;
+            border-radius:5px ;
+            display: block;
+            margin-left:70px ;
+            font-size: 30px;
+            padding-left: 40px;
+            text-align: left;
+            outline: none;
+        }
+        .btn1{
+            background: url("img/btn-gray.png");
+            margin:250px 70px;
+            margin-bottom: 140px;
+            color: #98d1dd;
+        }
+        .btn2{
+            background: url("img/btn-blue.png");
+            color: #373735;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .clear{
+            clear: both;
+        }
+        @media screen and (min-width: 1400px){
+            .box{
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="box">
+        <div class="img-box">
+            <img src="img/bw.png" id="img" alt="一只萌萌的小巴卫">
+        </div>
+        <div class="btn-box">
+            <button class="btn1" id="btn1">小新</button>
+            <button class="btn2" id="btn2">巴卫</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script>
+        var btns=document.getElementsByTagName("button");
+        var img=document.getElementById("img");
+        function  Switch(name) {
+            img.setAttribute("src","img/"+name+".png");
+        }
+        btns[0].onclick=function () {
+            Switch("xx");
+            btns[0].style.background="url(img/btn-blue.png)";
+            btns[1].style.background="url(img/btn-gray.png)";
+            document.body.style.background = "url('img/xx-bg.png')";
+            btns[0].style.color="#373735";
+            btns[1].style.color="#98d1dd";
+        }
+        btns[1].onclick=function () {
+            Switch("bw");
+            btns[0].style.background="url(img/btn-gray.png)";
+            btns[1].style.background="url(img/btn-blue.png)";
+            document.body.style.background = "url('img/bw-bg.png')";
+            btns[1].style.color="#373735";
+            btns[0].style.color="#98d1dd";
+        }
+    </script>
+</body>
+</html>
