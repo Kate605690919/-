@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ音乐</title>
+    <link rel="stylesheet" href="online1.css">
+    <style>
+        article.newsong{
+            height: 110vh;
+            background:url("./img/bg_index_new.jpg") 50% 0 repeat-x;
+            display: flex;
+            flex-direction:column;
+        }
+        article.newsong h1{
+            text-align: center;
+            font-weight: 400;
+            font-size: 47px;
+            line-height: 38px;
+            margin-top: 84px;
+            color: #ffffff;
+        }
+        article.newsong ul{
+            display: flex;
+            justify-content:center;
+            margin-bottom: 18px;
+        }
+        /*article.newsong .imgbox,*/.texbox span:nth-child(even){
+            margin-bottom: 32px;
+        }
+        article.newsong a{
+            color: #fff;
+            opacity: .5;
+            font-size: 16px;
+            margin: 0 35px;
+         }
+        article.newsong li a:hover ,.new-box span:nth-child(odd) a,article.newsong li:nth-child(1) a{
+            color: #ffffff;
+            opacity: 1;
+        }
+        .newsong-box{
+            display: flex;
+            justify-content:center;
+        }
+        .new-box:nth-child(odd){
+            background: rgba(0,0,0,.8);
+        }
+        .new-box:nth-child(even){
+            background: rgba(0,0,0,.6);
+        }
+        .texbox{
+            display: flex;
+            flex-direction: column;
+            padding-top: 32px;
+        }
+        .texbox span{
+            text-align: center;
+        }
+        .texbox:hover{
+            filter: none;
+            background-color: #31c27c;
+        }
+        .slide_switch__item {
+            display: inline-block;
+            width: 30px;
+            height: 1px;
+            padding: 10px 0;
+            margin: 0 5px;
+        }
+        /*.white-line{*/
+            /*filter: none;*/
+            /*background-color: #fff;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a class="hd-img">
+                    <img src="img/QQ音乐.png" height="68" width="190" />
+                </a>
+            </h1>
+            <nav class="topnav">
+                <ul>
+                    <li><a href="#" class="a-current">音乐馆</a></li>
+                    <li><a href="#">我的音乐</a></li>
+                    <li><a href="#">下载客户端</a></li>
+                    <li><a href="#">VIP</a></li>
+                </ul>
+            </nav>
+            <form method="get">
+                <div class="search-box">
+                    <input type="text" placeholder="MADE BIGBANG" name="search">
+                    <button>
+                        <img class="icon-search" src="img/search.png" height="16" width="16"/></i>
+                        <span class="icon-txt">搜索</span>
+                    </button>
+                </div>
+            </form>
+            <div class="button-group" >
+                <a href="#" class="login">登录</a>
+                <a href="#" class="lz btn-green">开通绿钻豪华版</a>
+                <a href="#" class="ff">开通付费包</a>
+            </div>
+            <nav class="subnav">
+                <ul>
+                    <li><a href="#" class="s-current">首页</a></li>
+                    <li><a href="#">歌手</a></li>
+                    <li><a href="#">专辑</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">分类歌单</a></li>
+                    <li><a href="#">MV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article class="newsong">
+        <h1>新歌首发</h1>
+        <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">华语</a></li>
+            <li><a href="#">欧美</a></li>
+            <li><a href="#">韩国</a></li>
+            <li><a href="#">日本</a></li>
+        </ul>
+        <div class="newsong-box">
+            <div class="new-box">
+                <div class="imgbox">
+                    <img src="img/new-01.jpg" height="300" width="300"/>
+                </div>
+                <div class="texbox">
+                    <span><a href="#">我们曾相爱</a></span>
+                    <span><a href="#">郭静</a></span>
+                </div>
+            </div>
+            <div class="new-box">
+                <div class="imgbox">
+                    <img src="img/new-02.jpg" height="300" width="300"/>
+                </div>
+                <div class="texbox">
+                    <span><a href="#">琵琶行</a></span>
+                    <span><a href="#">成龙</a></span>
+                </div>
+            </div>
+            <div class="new-box">
+                <div class="imgbox">
+                    <img src="img/new-03.jpg" height="300" width="300"/>
+                </div>
+                <div class="texbox">
+                    <span><a href="#">多亮</a></span>
+                    <span><a href="#">多亮</a></span>
+                </div>
+            </div>
+            <div class="new-box">
+                <div class="imgbox">
+                    <img src="img/new-04.jpg" height="300" width="300"/>
+                </div>
+                <div class="texbox">
+                    <span><a href="#">후시, 더 비기닝</a></span>
+                    <span><a href="#">韩国群星</a></span>
+                </div>
+            </div>
+        </div>
+        <!--<div class="switcth">-->
+            <!--<a href="#" class="slide_switch__item"><i class="white-line"></i></a>-->
+            <!--<a href="#" class="slide_switch__item"><i class="white-line"></i></a>-->
+            <!--<a href="#" class="slide_switch__item"><i class="white-line"></i></a>-->
+        <!--</div>-->
+    </article>
+    <article>
+        <div class="top-rank">
+            <section>
+                <div class="rank-hd">
+                    <h1 class="rank-title">排行榜</h1>
+                    <i class="rank-line rk-line-l"></i>
+                    <i class="rank-line rk-line-r"></i>
+                </div>
+                <a class="index-more">全部</a>
+                <div class="mod-toplist">
+                    <ul class="toplist">
+                        <li class="toplist-item toplist-item-pop">
+                            <div class="toplist-bg"></div>
+                            <i class="mask"></i>
+                            <i class="toplist-line"></i>
+                            <h4>巅峰榜</h4>
+                            <h2>流行指数</h2>
+                            <ul class="toplist-songlist">
+                                <li class="toplist-song">
+                                    <div class="name">1 FXXK IT (에라 모르겠다)</div>
+                                    <div class="artist">BIGBANG (빅뱅)</div>
+                                </li>
+                                <li class="toplist-song">
+                                    <div class="name">2 LAST DANCE </div>
+                                    <div class="artist">BIGBANG (빅뱅)</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">3 女儿情 (Live)</div>
+                                    <div class="artist">林俊杰</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">4 GIRLFRIEND</div>
+                                    <div class="artist">BIGBANG (빅뱅)</div></li>
+                            </ul>
+                        </li>
+                        <li class="toplist-item toplist-item-new">
+                            <div class="toplist-bg"></div>
+                            <i class="toplist-line"></i>
+                            <i class="mask"></i>
+                            <h4>巅峰榜</h4>
+                            <h2>流行指数</h2>
+                            <ul class="toplist-songlist">
+                                <li class="toplist-song">
+                                    <div class="name">1 演员</div>
+                                    <div class="artist">薛之谦</div>
+                                </li>
+                                <li class="toplist-song">
+                                    <div class="name">2 告白气球 </div>
+                                    <div class="artist">周杰伦</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">3 丑八怪 (Live)</div>
+                                    <div class="artist">薛之谦</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">4 Alone</div>
+                                    <div class="artist">Alan Walker</div></li>
+                            </ul>
+                        </li>
+                        <li class="toplist-item toplist-item-hot">
+                            <div class="toplist-bg"></div>
+                            <i class="toplist-line"></i>
+                            <i class="mask"></i>
+                            <h4>巅峰榜</h4>
+                            <h2>流行指数</h2>
+                            <ul class="toplist-songlist">
+                                <li class="toplist-song">
+                                    <div class="name">1 燃烧</div>
+                                    <div class="artist">乔任梁</div>
+                                </li>
+                                <li class="toplist-song">
+                                    <div class="name">2 十年 </div>
+                                    <div class="artist">梁朝伟/李宇春</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">3 认定</div>
+                                    <div class="artist">金志文</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">4 Everything Will Say Goodbye</div>
+                                    <div class="artist">张杰</div></li>
+                            </ul>
+                        </li>
+                        <li class="toplist-item toplist-item-high">
+                            <div class="toplist-bg"></div>
+                            <i class="toplist-line"></i>
+                            <i class="mask"></i>
+                            <h4>巅峰榜</h4>
+                            <h2>流行指数</h2>
+                            <ul class="toplist-songlist">
+                                <li class="toplist-song">
+                                    <div class="name">1 Alone</div>
+                                    <div class="artist">Alan Walker</div>
+                                </li>
+                                <li class="toplist-song">
+                                    <div class="name">2 Starboy </div>
+                                    <div class="artist">The Weeknd/Daft Punk</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">3 Can't Take My Eyes Off You x MAKE UP FOR EVER</div>
+                                    <div class="artist">Jessie J</div></li>
+                                <li class="toplist-song">
+                                    <div class="name">4 On The Edge</div>
+                                    <div class="artist">Far East Movement/曲婉婷</div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </article>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    font-family: cursive,sans-serif;
+    border: none;
+}
+h3.title{
+    margin-left: 20px;
+}
+article{
+    background-color: #333333;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.8);
+    display:flex ;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 4vh;
+    transform: rotate(1deg);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+aside{
+    min-width: 210px;
+    position: relative;
+    background-color: #333;
+    flex-grow: 0;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    color: aliceblue;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+content{
+    background: #f4f4f4;
+    flex-grow: 3;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+p{
+    margin-left: 2em;
+    margin-right: 1em;
+    line-height: 1.3em;
+}
+.title{
+    z-index: 1;
+    position: relative;
+}
+aside img {
+    position: absolute;
+    top: 19px;
+    left: 9px;
+}
+.il1{
+    top:412px;
+}
+content{
+    padding-left:2em;
+    padding-right:2em;
+}
+.icon{
+    vertical-align: middle;
+}
+.table{
+    display: table;
+    margin-left: 2rem;
+}
+.tr{
+    display: table-row;
+}
+.td{
+    display: table-cell;
+}
+.td:nth-child(even){
+    padding-left: 4rem;
+}
+.img-me{
+    width: 127px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+}
+aside:hover{
+    background-color:hsla(0,0%,10%,1) ;
+}
+content:hover{
+    background-color: hsla(0,0%,100%,1);
+}
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 18px;
+    }
+    aside{
+        min-width: 245px;
+    }
+    aside img{
+        width: 247px;
+        top: 20px;
+    }
+    .il1{
+        top:464px;
+    }
+    .img-me{
+        width: 144px;
+        height: 179px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    html{
+        font-size: 20px;
+    }
+    aside{
+        min-width: 245px;
+    }
+    aside img{
+        width: 247px;
+        top: 22px;
+    }
+    .il1{
+        top:502px;
+    }
+    .img-me{
+        width: 144px;
+        height: 179px;
+    }
+}
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 12px;
+    }
+    aside{
+        min-width: 150px;
+    }
+    aside img{
+        width: 147px;
+        top: 14px;
+    }
+    .il1{
+        top:299px;
+    }
+    .img-me{
+        width: 90px;
+        height: 111px;
+    }
+}
