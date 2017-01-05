@@ -1,0 +1,19 @@
+.box{
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/汉库克.jpeg") no-repeat;
+    background-size: cover;
+}
+.login{
+    overflow: hidden;
+    width: 520px;
+    background-color: hsla(9,81%,33%,.9);
+    position: relative;
+    top: 15vh;
+    left: 10vw;
+    border-radius: 5px;
+}
+.login-title{
+    text-align: center;
+    color: #ffffff;
+}

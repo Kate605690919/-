@@ -1,0 +1,31 @@
+.nav{
+    display: flex;
+    align-items:center;
+}
+.brand img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav ul{
+    display: flex;
+    line-height: 80px;
+}
+.nav ul li{
+    font-weight: 600;
+    padding: 1em 2em;
+}
+a.link:hover{
+    color: #31c27c;
+}
+.nav ul li.active{
+    background-color: #31c27c;
+}
+.nav ul li.active a{
+    color: #ffffff;
+}
+.nav-ul{
+    flex-grow: 1;
+}
+.btn-group a:first-child{
+    line-height: 100px;
+}

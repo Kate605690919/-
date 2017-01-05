@@ -1,0 +1,18 @@
+.page{
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-width: 1000px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+.page-black{
+    background-color: #363636;
+    color: white;
+    margin: 20px;
+    margin-top: 0px;
+    min-width: 960px;
+}
+.page-black:nth-of-type(1){
+    margin-top: -20px;
+}

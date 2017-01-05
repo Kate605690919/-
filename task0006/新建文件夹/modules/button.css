@@ -1,0 +1,18 @@
+.btn{
+    margin: 10px 20px;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px #c9c9c9 solid;
+    line-height: 50px;
+}
+.btn-green{
+    background-color: #31c27c;
+    border: 1px #31c27c solid;
+    color: #ffffff;
+}
+.btn:hover{
+    background-color: hsl(151,60%,43%);
+}
+.btn-group{
+    display: flex;
+}

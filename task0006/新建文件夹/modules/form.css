@@ -1,0 +1,33 @@
+form{
+    display: table;
+    color: #ffffff;
+    font-size: 30px;
+    padding:30px;
+}
+.form-group{
+    height: 80px;
+    display: table-row;
+}
+.form-group:nth-of-type(3){
+    height: auto;
+}
+.form-group-center{
+    width: 100%;
+    text-align: center;
+    display:block;
+    justify-content: center;
+}
+.tr{
+    display: table-cell;
+    padding-right: 10px;
+}
+label{
+    text-align: right;
+}
+input[type="submit"]{
+    background-color: #ffffff;
+    color: hsl(7,77%,42%);
+    border: none;
+    width: 100%;
+    margin: auto;
+}
