@@ -1,0 +1,18 @@
+.btn{
+    border: 0px;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-shadow: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-primary{
+    background-color: #1abc9c;
+}
+.btn-primary:hover,.btn-primary:focus{
+    background-color: #2fe2bf;
+}
+.btn-primary:active{
+    background-color: #16a085;
+}

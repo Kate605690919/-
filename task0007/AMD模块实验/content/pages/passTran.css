@@ -1,0 +1,22 @@
+/*初始化*/
+html,body{
+    height:80%;
+    margin: 0;
+    font-size: 18px;
+}
+input,button{
+    outline: none;
+}
+/*正文*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+}
+input{
+    width: 13em;
+}
+button{
+    padding: 8px 8px 9px 10px;
+}
