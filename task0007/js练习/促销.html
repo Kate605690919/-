@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>整点促销</title>
+    <link rel="stylesheet" href="content/modules/button.css">
+    <link rel="stylesheet" href="content/modules/input.css">
+    <link rel="stylesheet" href="content/base/passTran.css">
+    <link rel="stylesheet" href="content/pages/sales.css">
+</head>
+<body>
+<div class="box">
+    <p>请设置促销日期</p>
+    <div class="form-group">
+        <div class="input-group">
+            <label>年 &nbsp;<input class="input-primary" id="y" value="2017"></label>
+        </div>
+        <div class="input-group">
+            <label>月 &nbsp;<input class="input-primary" id="m" value="2"></label>
+        </div>
+        <div class="input-group">
+            <label>星期 <input class="input-primary" id="w" value="3"></label>
+        </div>
+        <div class="input-group">
+            <label>整点 <input class="input-primary" id="h" value="10"></label>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-primary">查看活动日期及剩余天数</button>
+    </div>
+    <p class="result form-group"></p>
+</div>
+    <script src="script/pages/sales.js"></script>
+</body>
+</html>
