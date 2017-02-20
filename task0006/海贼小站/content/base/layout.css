@@ -1,0 +1,59 @@
+.nav{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items:center;
+}
+.brand img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav ul{
+    display: flex;
+    line-height: 23px;
+}
+.nav ul li{
+    font-weight: 600;
+    padding: 1em 2em;
+}
+a.link:hover{
+    color: #31c27c;
+}
+.nav ul li.active{
+    background-color: #31c27c;
+}
+.nav ul li.active a{
+    color: #ffffff;
+}
+.nav-ul{
+    flex-grow: 1;
+}
+.nav-ul li{
+    position: relative;
+}
+.btn-group a:first-child{
+    line-height: 55px;
+}
+.nav-ul li ul{
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #2C3E50;
+    color: #ffffff;
+}
+.nav-ul li:hover>ul,.nav-ul li:focus>ul{
+    display: block;
+}
+/*响应式*/
+
+/**js控制*/
+/*.hide{*/
+    /*display: none;*/
+/*}*/
+/*.show{*/
+    /*display: flex;*/
+/*}*/

@@ -1,0 +1,30 @@
+.v1{
+    height: 100vh;
+    width: 100%;
+    background: url("../img/5人.png") center center no-repeat;
+    background-size:cover;
+    padding: 100px 50px;
+}
+.v2{
+    /*background-image: url("../img/海2.jpg");*/
+    background: #ECF0F1;
+    height: auto;
+    min-width: 100vh;
+}
+.direction{
+    text-align: center;
+}
+.direction img{
+    transition: 0.4s;
+}
+.direction:hover img{
+    transform: scale(1.1);
+}
+#detail {
+    transition: 0.4s;
+    position: relative;
+    top: -100px;
+}
+.v2 h2{
+    margin: -35px 10px 10px;
+}
